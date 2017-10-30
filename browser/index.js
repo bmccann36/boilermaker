@@ -1,8 +1,8 @@
-import react from 'react';
-import reactDOM from 'react-dom';
-import Main from './components/Main';
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import Main from './components/Main';
 
 ReactDOM.render(
-  <Main />,
+  <h1>Hey there </h1>,
   document.getElementById('app')
 )

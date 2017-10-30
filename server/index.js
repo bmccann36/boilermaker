@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser')
 const volleyball = require('volleyball')
 // const api = require('./api')
-// const server = require('http').createServer();
+const server = require('http').createServer();
 
 // you'll of course want static middleware so your browser can request things like your 'bundle.js'
 app.use(express.static(path.join(__dirname, '../public')))
@@ -23,7 +23,8 @@ app.get('*', function (req, res, next) {
 });
 
 
-// server.on('request', app);
+server.on('request', app);
+
 app.listen(3000, () => {
   console.log('listening on port 3000');
 });
